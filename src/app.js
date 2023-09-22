@@ -27,7 +27,7 @@ const packageJson = require('../package.json')
 const app = express()
 
 /* istanbul ignore next */
-if (formaDeExecucao() !== 'npm') {
+if (formaDeExecucao() !== 'npm' && formaDeExecucao() !== 'docker') {
   ddTrace.init()
   ddTrace.use('express')
 }

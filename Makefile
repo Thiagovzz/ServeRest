@@ -14,8 +14,8 @@ build:
 run:
 	@docker run -p ${HOST_PORT}:3000 ${NAME_IMAGE}
 
-clean:
-	@docker rmi -f ${NAME_IMAGE}
+stop:
+	@docker stop `docker ps -q`
 
 # COMANDOS DE DESENVOLVIMENTO \/
 
