@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.12 on linux)" generated="20231013 23:47:02.832" rpa="false" schemaversion="4">
+<suite id="s1" name="Api Testing Usuario" source="/home/thiago/API-robot/ServeRest/test/api_testing_usuario.robot">
+<test id="s1-t1" name="Cenário 01: Cadastrar um novo usuário com sucesso na ServerRest" line="7">
+<kw name="Criar um usuário novo" library="api_testing_usuario">
+<kw name="Generate Random String" library="String">
+<var>${palavra_aleatoria}</var>
+<arg>length=8</arg>
+<arg>chars=[LETTERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20231013 23:47:02.906" level="INFO">${palavra_aleatoria} = GlClzhmE</msg>
+<status status="PASS" starttime="20231013 23:47:02.906" endtime="20231013 23:47:02.906"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Minha palavra aleatoria:</arg>
+<arg>${palavra_aleatoria}@emailteste.com</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231013 23:47:02.906" level="FAIL">Invalid log level 'GlClzhmE@emailteste.com'.</msg>
+<status status="FAIL" starttime="20231013 23:47:02.906" endtime="20231013 23:47:02.906"/>
+</kw>
+<status status="FAIL" starttime="20231013 23:47:02.905" endtime="20231013 23:47:02.907"/>
+</kw>
+<status status="FAIL" starttime="20231013 23:47:02.905" endtime="20231013 23:47:02.907">Invalid log level 'GlClzhmE@emailteste.com'.</status>
+</test>
+<status status="FAIL" starttime="20231013 23:47:02.833" endtime="20231013 23:47:02.907"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Api Testing Usuario">Api Testing Usuario</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
